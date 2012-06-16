@@ -11,7 +11,6 @@ HEADERS += sources/ball.h \
            sources/item.h \
            sources/levelloader.h \
            sources/mainwindow.h \
-           sources/native.h \
            sources/renderer.h \
            sources/textitems.h \
     sources/settings.h
