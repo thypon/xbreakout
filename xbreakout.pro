@@ -33,3 +33,6 @@ SOURCES += sources/ball.cpp \
            sources/mainwindow.cpp \
            sources/renderer.cpp \
            sources/textitems.cpp
+
+RESOURCES += \
+    resources/xbreakout.qrc

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KBreakOutLevelSet>
+  <Level Name="Level 1">
+    <Line Number="7">-----1122222211-----</Line>
+    <Gift Type="Gift100Points">2</Gift>
+    <Gift Type="Gift200Points">1</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+  </Level>
+  <Level Name="Level 2">
+    <Line Number ="6">11111122222222111111</Line>
+    <Line>---22211111111222---</Line>
+    <Line>11uu112222222211uu11</Line>
+    <Gift Type="GiftStickyBar">1</Gift>
+    <Gift Type="GiftEnlargeBar">1</Gift>
+    <Gift Type="GiftShrinkBar">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftDecreaseSpeed">1</Gift>
+    <Gift Type="Gift100Points">3</Gift>
+    <Gift Type="Gift200Points">1</Gift>
+    <Gift Type="GiftAddBall">1</Gift>
+  </Level>
+  <Level Name="Level 3">
+    <Line Number="6">11111111111111111---</Line>
+    <Line>22222222222222222---</Line>
+    <Line>11111111111111111---</Line>
+    <Line>333333333333333333--</Line>
+    <Line>444444444444444444--</Line>
+    <Line>333333333333333333--</Line>
+    <Line>5555555555555555555-</Line>
+    <Line>6666666666666666666-</Line>
+    <Line>5555555555555555555-</Line>
+    <Gift Type="Gift100Points">10</Gift>
+    <Gift Type="Gift200Points">2</Gift>
+    <Gift Type="GiftBurningBall">2</Gift>
+    <Gift Type="GiftUnstoppableBall">1</Gift>
+  </Level>
+  <Level Name="Level 4">
+    <Line Number="4">--4444444444444444--</Line>
+    <Line>-333333333333333333-</Line>
+    <Line>-444444444444444444-</Line>
+    <Line>-333xxxx3333xxxx333-</Line>
+    <Line>-444x4444444444x444-</Line>
+    <Line>-333x3333333333x333-</Line>
+    <Line>-444x4444444444x444-</Line>
+    <Line>-333x3333333333x333-</Line>
+    <Line>-444xxxxxxxxxxxx444-</Line>
+    <Line>-333333333333333333-</Line>
+    <Gift Type="Gift100Points">4</Gift>
+    <Gift Type="Gift200Points">1</Gift>
+    <Gift Type="GiftMoreExplosion">8</Gift>
+  </Level>
+  <Level Name="Level5">
+    <Line Number="5">----11-11--11-11----</Line>
+    <Line>--2-22-22--22-22-2--</Line>
+    <Line>-333333333333333333-</Line>
+    <Line>u--u11u11uu11u11u--u</Line>
+    <Line>33333333333333333333</Line>
+    <Line>22222222222222222--2</Line>
+    <Line>1--1--1--11--1--1--1</Line>
+    <Gift Type="GiftNextLevel">1</Gift>
+    <Gift Type="GiftMagicWand">2</Gift>
+    <Gift Type="Gift100Points">3</Gift>
+    <Gift Type="GiftLoseLife">3</Gift>
+    <Gift Type="GiftSplitBall">4</Gift>
+    <Gift Type="GiftStickyBar">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftDecreaseSpeed">2</Gift>
+    <Gift Type="GiftEnlargeBar">3</Gift>
+    <Gift Type="GiftShrinkBar">3</Gift>
+  </Level>
+  <Level Name="Level 6">
+    <Line Number="3">---4--4--66----333--</Line>
+    <Line>---4--4--666---333--</Line>
+    <Line>---4-4---6-66--3----</Line>
+    <Line>---4-4---6--6--3----</Line>
+    <Line>---44----6--6--33---</Line>
+    <Line>---44----6--6--33---</Line>
+    <Line>---444---6--6--3----</Line>
+    <Line>---4-4---6-66--3----</Line>
+    <Line>---4--4--666---333--</Line>
+    <Line>---4--4--66----333--</Line>
+    <Line Number="14">hhhhhhhhhhhhhhhhhhhh</Line>
+    <Line>mmmmmmmmmmmmmmmmmmmm</Line>
+    <Gift Type="GiftStickyBar">1</Gift>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="GiftMagicWand">1</Gift>
+    <Gift Type="GiftMagicEye">1</Gift>
+    <Gift Type="Gift100Points">4</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+    <Gift Type="GiftEnlargeBar">3</Gift>
+    <Gift Type="GiftShrinkBar">6</Gift>
+  </Level>
+  <Level Name="Level 7">
+    <Line>h111111111------hhh</Line>
+    <Line>h---------11111--hhh</Line>
+    <Line>h---------------1hhh</Line>
+    <Line>h----------------hhh</Line>
+    <Line>hh22222222--------hh</Line>
+    <Line>hh--------22222---hh</Line>
+    <Line>hhhhhhhhhhhhhhh----h</Line>
+    <Line>hhhhhhhhhhhhhhh2h--h</Line>
+    <Line>hhhhhhhhhhhhhhhhh--h</Line>
+    <Line>hhhhhhhhhhhhhhhhh--h</Line>
+    <Line>hhhhhhhhhhhhhhhhh--h</Line>
+    <Line>hhhhhhhhhhhhhhhhh--h</Line>
+    <Line>hhhhhhhhhhhhhhhhhh-h</Line>
+    <Line>hhhhhhhhhhhhhhhhhh-h</Line>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="GiftMagicEye">3</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftEnlargeBar">1</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+  </Level>
+  <Level Name="Level 8">
+    <Line Number="3">u------------------u</Line>
+    <Line>--------------------</Line>
+    <Line>-uuuuuuuu--uuuuuuuu-</Line>
+    <Line>-u333333----333333u-</Line>
+    <Line>-u3x33x3u--u3x33x3u-</Line>
+    <Line>-u333333----333333u-</Line>
+    <Line>-u333333u--u333333u-</Line>
+    <Line>-u3x33x3----3x33x3u-</Line>
+    <Line>-u333333u--u333333u-</Line>
+    <Line>-u333333----333333u-</Line>
+    <Line>-u3x33x3u--u3x33x3u-</Line>
+    <Line>-u333333----333333u-</Line>
+    <Line>-uuuuuuuu--uuuuuuuu-</Line>
+    <Gift Type="Gift100Points">4</Gift>
+    <Gift Type="Gift200Points">2</Gift>
+    <Gift Type="GiftMoreExplosion">3</Gift>
+    <Gift Type="GiftMagicWand">3</Gift>
+  </Level>
+  <Level Name="Level 9">
+    <Line>66--333--444--555--6</Line>
+    <Line>666--333--444--555--</Line>
+    <Line>666--333--444--555--</Line>
+    <Line>-666--333--444--555-</Line>
+    <Line>-666--333--444--555-</Line>
+    <Line>--666--333--444--555</Line>
+    <Line>--666--333--444--555</Line>
+    <Line>5--666--333--444--55</Line>
+    <Line>5--666--333--444--55</Line>
+    <Line>55--666--333--444--5</Line>
+    <Line>55--666--333--444--5</Line>
+    <Line>555--666--333--444--</Line>
+    <Line>555--666--333--444--</Line>
+    <Line>-555--666--333--444-</Line>
+    <Gift Type="GiftStickyBar">1</Gift>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="Gift200Points">4</Gift>
+    <Gift Type="Gift500Points">2</Gift>
+    <Gift Type="Gift1000Points">1</Gift>
+    <Gift Type="GiftNextLevel">1</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftDecreaseSpeed">6</Gift>
+    <Gift Type="GiftEnlargeBar">1</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+  </Level>
+  <Level Name="Level 10">
+    <Line Number="6">11111111111111111111</Line>
+    <Line>22222222222222222222</Line>
+    <Line>33333333333333333333</Line>
+    <Line>44444444444444444444</Line>
+    <Line>55555555555555555555</Line>
+    <Line>xx6666666666666666xx</Line>
+    <Line>uuuu6uuuuuuuuuu6uuuu</Line>
+    <Line>66666666666666666666</Line>
+    <Gift Type="GiftStickyBar">1</Gift>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="Gift100Points">2</Gift>
+    <Gift Type="Gift200Points">1</Gift>
+    <Gift Type="Gift500Points">1</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftDecreaseSpeed">1</Gift>
+    <Gift Type="GiftEnlargeBar">3</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+  </Level>
+  <Level Name="Level 11">
+    <Line>uuuuuuuuuuuuuuuuuuuu</Line>
+    <Line>u------------------u</Line>
+    <Line>u-----------------1u</Line>
+    <Line>u------------------u</Line>
+    <Line>u------------------u</Line>
+    <Line>u----uuuuuuuuuuuuuuu</Line>
+    <Line>u------------------u</Line>
+    <Line>u------------------u</Line>
+    <Line>u------------------u</Line>
+    <Line>uuuuuuuuuuuuuuuu---u</Line>
+    <Line>---------------u---u</Line>
+    <Line>-------------------u</Line>
+    <Line>-------------------u</Line>
+    <Line>-----------u-------u</Line>
+    <Line>-----------uuuuuuuuu</Line>
+  </Level>
+  <Level Name="Level 12">
+    <Line Number="3">--h--------------h--</Line>
+    <Line>-hhmmmmmxmmxmmmmmhh-</Line>
+    <Line>-hhmmm11111111mmmhh-</Line>
+    <Line>-hhmm1111111111mmhh-</Line>
+    <Line>-hhmm1111111111mmhh-</Line>
+    <Line>-hhmm1122222211mmhh-</Line>
+    <Line>-hhmm1122222211mmhh-</Line>
+    <Line>-hhmm1122222211mmhh-</Line>
+    <Line>-hhmm1111111111mmhh-</Line>
+    <Line>-hhmm1111111111mmhh-</Line>
+    <Line>-hhmmm11111111mmmhh-</Line>
+    <Line>-hhmmmmmmmmmmmmmmhh-</Line>
+    <Line>-hhhhhhhhhhhhhhhhhh-</Line>
+    <Gift Type="GiftUnstoppableBall">1</Gift>
+    <Gift Type="Gift100Points">8</Gift>
+    <Gift Type="Gift200Points">4</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftMagicWand">1</Gift>
+    <Gift Type="GiftIncreaseSpeed">6</Gift>
+    <Gift Type="GiftDecreaseSpeed">3</Gift>
+    <Gift Type="GiftEnlargeBar">1</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+  </Level>
+  <Level Name="Level 13">
+    <Line>--3333333333333333--</Line>
+    <Line>--3333333333333333--</Line>
+    <Line>-ux11111uhhu11111xu-</Line>
+    <Line>-ux11111uhhu11111xu-</Line>
+    <Line>-ux11111uhhu11111xu-</Line>
+    <Line>-ux11111uhhu11111xuh</Line>
+    <Line>-ux11111uhhu11111xuh</Line>
+    <Line>-ux11111uhhu11111xuh</Line>
+    <Line>-ux11111uhhu11111xuh</Line>
+    <Line>-ux11111uhhu11111xuh</Line>
+    <Line>-ux1111xu55ux1111xuh</Line>
+    <Line>-ux1111xu55ux1111xuh</Line>
+    <Line>6uxxxxxxu55uxxxxxxu6</Line>
+    <Line>6uuuuuuuu--uuuuuuuu6</Line>
+    <Gift Type="GiftBurningBall">2</Gift>
+    <Gift Type="Gift100Points">4</Gift>
+    <Gift Type="Gift500Points">1</Gift>
+    <Gift Type="GiftAddBall">2</Gift>
+    <Gift Type="GiftSplitBall">3</Gift>
+    <Gift Type="GiftMagicWand">1</Gift>
+    <Gift Type="GiftMagicEye">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftEnlargeBar">2</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+    <Gift Type="GiftLoseLife">3</Gift>
+    <Gift Type="GiftAddLife">2</Gift>
+  </Level>
+  <Level Name="Level 14">
+    <Line>hhhhhhhhhhhhhhhhhhhh</Line>
+    <Line>hhhhhhhhhhhhhhhhhhhh</Line>
+    <Line>hhhhhhhhhhhhhhhhhhhh</Line>
+    <Line>--------------------</Line>
+    <Line>----uuuu------------</Line>
+    <Line>-------u------------</Line>
+    <Line>-----2-u------------</Line>
+    <Line>-------u------------</Line>
+    <Line>--------------------</Line>
+    <Line>--------------------</Line>
+    <Line>-----hhhhhhhhhhhhhhh</Line>
+    <Line>----hhhhhhhhhhhhhhhh</Line>
+    <Line>---hhhhhhhhhhhhhhhhh</Line>
+    <Line>---hhhhhhhhhhhhhhhhh</Line>
+    <Line>--uuhhhhhhhhhhhhhhhh</Line>
+    <Line>---uuuhhhhhhhhhhhhhh</Line>
+    <Gift Type="GiftLoseLife">1</Gift>
+    <Gift Type="GiftAddBall">1</Gift>
+    <Gift Type="GiftSplitBall">6</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftDecreaseSpeed">2</Gift>
+    <Gift Type="GiftEnlargeBar">2</Gift>
+    <Gift Type="GiftShrinkBar">2</Gift>
+  </Level>
+  <Level Name="Level 15">
+    <Line>22222--------------</Line>
+    <Line>111111-------------</Line>
+    <Line>6666666------------</Line>
+    <Line>55555555-----------</Line>
+    <Line>444444444----------</Line>
+    <Line>3333333333---------</Line>
+    <Line>22222222222--------</Line>
+    <Line>111111111111-------</Line>
+    <Line>6666666666666------</Line>
+    <Line>55555555555555-----</Line>
+    <Line>444444444444444----</Line>
+    <Line>3333333333333333---</Line>
+    <Line>22222222222222222--</Line>
+    <Line>111111111111111111-</Line>
+    <Line>uuuuuuuuuuuuuuuuuuu</Line>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="GiftUnstoppableBall">1</Gift>
+    <Gift Type="Gift200Points">8</Gift>
+    <Gift Type="Gift500Points">4</Gift>
+    <Gift Type="Gift1000Points">2</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftMagicWand">1</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftEnlargeBar">3</Gift>
+    <Gift Type="GiftShrinkBar">5</Gift>
+    <Gift Type="GiftNextLevel">1</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+  </Level>
+  <Level Name="Level 16">
+    <Line>-12121212xx12121212-</Line>
+    <Line>-21xxxx212121xxxx21-</Line>
+    <Line>-uuuuuuuuuuuuuuuuuu-</Line>
+    <Line>-434343434343434343-</Line>
+    <Line>-3xxxx43434343xxxx4-</Line>
+    <Line>-uuuuuuuuuuuuuuuuuu-</Line>
+    <Line>-656565656565656565-</Line>
+    <Line>-565656565656565656-</Line>
+    <Line>-656565656565656565-</Line>
+    <Line>-565656565656565656-</Line>
+    <Line>-656565656565656565-</Line>
+    <Line>-uu555uu6666uu555uu-</Line>
+    <Line>h-5-5-5-5-5-5-5-5-5h</Line>
+    <Line>-6-6-6-6-6-6-6-6-6-6</Line>
+    <Line>5-5-5-5-5-5-5-5-5-5-</Line>
+    <Line>-6-6-6-6-6-6-6-6-6-6</Line>
+    <Gift Type="Gift100Points">4</Gift>
+    <Gift Type="Gift200Points">3</Gift>
+    <Gift Type="GiftBurningBall">1</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftMoreExplosion">1</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftEnlargeBar">4</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+  </Level>
+  <Level Name="Level 17">
+    <Line>hhhhhhhhhhhhhhhhhhhh</Line>
+    <Line>hxxxxxxxxxxxxxxxxxxx</Line>
+    <Line>hxhhhhhhhhhhhhh----x</Line>
+    <Line>hxhhhhhhhhhhhh----hh</Line>
+    <Line>hxxxxxxxxhhhh----hhh</Line>
+    <Line>hxhhhhhhhhhh----hhhh</Line>
+    <Line>hxhhhhhhhhh----hhhhh</Line>
+    <Line>hxxxhhhhhh----hhhhhh</Line>
+    <Line>hxhhhhhhh----hhhhhhh</Line>
+    <Line>hxhhhhhh----hhhhhhhh</Line>
+    <Line>hhhhhhh----hhhhhhhhh</Line>
+    <Line>hhhhhh----hhhhhhhhhh</Line>
+    <Line>hhhhh----hhhhhhhhhhh</Line>
+    <Line>hhhh----hhhhhhhhhhhh</Line>
+    <Line>hhh----hhhhhhhhhhhhh</Line>
+    <Line>hh----hhhhhhhhhhhhhh</Line>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftBurningBall">3</Gift>
+    <Gift Type="GiftMagicEye">1</Gift>
+  </Level>
+  <Level Name="Level 18">
+    <Line Number="4">-u6------------66u-</Line>
+    <Line>-u666uu22222uu666u-</Line>
+    <Line>-uu66u2222222u66uu-</Line>
+    <Line>--666u2222222u666--</Line>
+    <Line>--666u2222222u666--</Line>
+    <Line>--666u2222222u666--</Line>
+    <Line>---66u2222222u66---</Line>
+    <Line>---66u2222222u66---</Line>
+    <Line>---66u2222222u66---</Line>
+    <Line>---66uuuuuuuuu66---</Line>
+    <Line>----66666666666----</Line>
+    <Gift Type="Gift100Points">5</Gift>
+    <Gift Type="GiftSplitBall">2</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">3</Gift>
+    <Gift Type="GiftEnlargeBar">2</Gift>
+    <Gift Type="GiftShrinkBar">4</Gift>
+    <Gift Type="GiftAddLife">1</Gift>
+  </Level>
+  <Level Name="Level 19">
+    <Line Number="3">-433333333333333334-</Line>
+    <Line>-43666666mm66666634-</Line>
+    <Line>-4365555mmmm5555634-</Line>
+    <Line>-436566mmmmmm665634-</Line>
+    <Line>-43656mmmmmmmm65634-</Line>
+    <Line>14365mmm2222mmm56341</Line>
+    <Line>1436mmm211112mmm6341</Line>
+    <Line>143mmmm21xx12mmmm341</Line>
+    <Line>143mmmm2xxxx2mmmm341</Line>
+    <Line>143mmm1xxhhxx1mmm341</Line>
+    <Line>1436-m1xhmmhx1m-6341</Line>
+    <Line>1436m---mmmm---m6341</Line>
+    <Line>-436-----mm-----634-</Line>
+    <Line>h43--------------34h</Line>
+    <Gift Type="Gift100Points">5</Gift>
+    <Gift Type="GiftStickyBar">2</Gift>
+    <Gift Type="GiftEnlargeBar">2</Gift>
+    <Gift Type="GiftShrinkBar">3</Gift>
+    <Gift Type="GiftLoseLife">2</Gift>
+    <Gift Type="GiftAddBall">1</Gift>
+    <Gift Type="GiftSplitBall">4</Gift>
+    <Gift Type="GiftDecreaseSpeed">2</Gift>
+    <Gift Type="GiftIncreaseSpeed">2</Gift>
+    <Gift Type="GiftMoreExplosion">20</Gift>
+    <Gift Type="GiftMagicEye">3</Gift>
+  </Level>
+  <Level Name="Level 20">
+    <Line>6-----u------------h</Line>
+    <Line>------h------------u</Line>
+    <Line>------u----------u--</Line>
+    <Line>---------u------uh--</Line>
+    <Line>------uuu-u-u--uhh--</Line>
+    <Line>uuuuuu--u--u-uhuuh--</Line>
+    <Line>---u----------u--u--</Line>
+    <Line>------------------u-</Line>
+    <Line>------------------u-</Line>
+    <Line Number="17">------u---u---u---u-</Line>
+  </Level>
+  <Level Name="Level 21">
+    <Line>mm-------mm-------mm</Line>
+    <Line>--------------------</Line>
+    <Line>---mm----------mm---</Line>
+    <Line>-111111111111111111-</Line>
+    <Line>-1mmmmmmmmmmmmmmmm1-</Line>
+    <Line>-1mx333333333333xm1-</Line>
+    <Line>-1m34444444444443m1-</Line>
+    <Line>-1m34555555555543m1-</Line>
+    <Line>-1m34566666666543m1-</Line>
+    <Line>-1m34562x22x26543m1-</Line>
+    <Line>-1m34566666666543m1-</Line>
+    <Line>-1m34555555555543m1-</Line>
+    <Line>-1m34444444444443m1-</Line>
+    <Line>-1mx333333333333xm1-</Line>
+    <Line>-1mmmmmmmmmmmmmmmm1-</Line>
+    <Line>-111111111111111111-</Line>
+    <Line>-hhhhhhhhhhhhhhhhhh-</Line>
+    <Line>-hhhhhhhhhhhhhhhhhh-</Line>
+    <Gift Type="GiftBurningBall">2</Gift>
+    <Gift Type="GiftUnstoppableBall">2</Gift>
+    <Gift Type="GiftSplitBall">3</Gift>
+    <Gift Type="GiftMoreExplosion">3</Gift>
+    <Gift Type="GiftEnlargeBar">3</Gift>
+    <Gift Type="GiftMagicEye">1</Gift>
+    <Gift Type="GiftStickyBar">2</Gift>
+    <Gift Type="Gift1000Points">4</Gift>
+    <Gift Type="GiftAddLife">5</Gift>
+    <Gift Type="GiftNextLevel">3</Gift>
+  </Level>
+  <Level Name="Level 22">
+    <Line>66666666666666666666</Line>
+    <Line>66666666666666666666</Line>
+    <Line>6------------------6</Line>
+    <Line>6------------------6</Line>
+    <Line>6--333--4--4--55---6</Line>
+    <Line>6--333--4--4--555--6</Line>
+    <Line>6--3----44-4--5-5--6</Line>
+    <Line>6--3----44-4--5-5--6</Line>
+    <Line>6--33---4444--5-5--6</Line>
+    <Line>6--33---4444--5-5--6</Line>
+    <Line>6--3----4-44--5-5--6</Line>
+    <Line>6--3----4-44--5-5--6</Line>
+    <Line>6--333--4--4--555--6</Line>
+    <Line>6--333--4--4--55---6</Line>
+    <Line>6------------------6</Line>
+    <Line>6------------------6</Line>
+    <Line>66666666666666666666</Line>
+    <Line>66666666666666666666</Line>
+    <Gift Type="GiftLoseLife">5</Gift>
+    <Gift Type="GiftSplitBall">10</Gift>
+    <Gift Type="GiftIncreaseSpeed">35</Gift>
+  </Level>
+</KBreakOutLevelSet>
