@@ -48,7 +48,7 @@ Renderer::~Renderer()
 
 bool Renderer::loadTheme(const QString& themeName)
 {
-    QString path = "themes/" + themeName + ".svgz";
+    QString path = ":/themes/" + themeName + ".svgz";
 
     if (themeName == NULL) return false;
     if (!QFile::exists(path)) return false;

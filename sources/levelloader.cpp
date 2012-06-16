@@ -62,7 +62,7 @@ void LevelLoader::setLevelset(const QString& levelname)
 
     // Loading document model
     // Locating the path in the filesystem
-    QString path = "levelsets/" + m_levelname + ".levelset";
+    QString path = ":/levelsets/" + m_levelname + ".levelset";
     // --
     
     delete m_levelset;
