@@ -1,5 +1,9 @@
 QT += xml svg
 
+DEPENDPATH += $$PWD $$PWD/sources
+INCLUDEPATH += $$PWD $$PWD/sources
+
+
 HEADERS += sources/ball.h \
            sources/brick.h \
            sources/canvasitems.h \
