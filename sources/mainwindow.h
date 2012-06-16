@@ -31,8 +31,6 @@ public:
     MainWindow(QWidget *parent=0);
     ~MainWindow();
 
-    void loadSettings();
-
 private slots:
     void handleEndedGame(int score, int level, int time);
     void startNewGame();

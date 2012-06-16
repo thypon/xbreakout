@@ -21,6 +21,7 @@
 #include "canvasitems.h"
 #include "canvaswidget.h"
 #include "renderer.h"
+#include "settings.h"
 
 #include <QGraphicsScene>
 #include <QPointer>
@@ -67,6 +68,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(gameEngine, SIGNAL(levelChanged()),
             this, SLOT(handleLevelChanged()));
+
+    connect(Settings::self(), SIGNAL(themeChanged()),
+            canvasWidget, SLOT(reloadSprites()));
     
     setCentralWidget(canvasWidget);
     
@@ -77,7 +81,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // show here (instead of in main) else the mouse can't be grabbed
     show();
-    gameEngine->start("default");
+    gameEngine->start(Settings::self()->getLevelset());
 }
  
 MainWindow::~MainWindow()
@@ -112,20 +116,6 @@ void MainWindow::setupActions()
     this->addAction(pauseAction);
 }
 
-void MainWindow::loadSettings() 
-{
-    /*
-    if (!Renderer::self()->loadTheme(Settings::theme())) {
-         TODO: porting, QMessageBox::error(this,  
-           i18n("Failed to load \"%1\" theme. Please check your installation.",
-           Settings::theme()));
-        return;
-    }*/
-    
-    canvasWidget->reloadSprites();
-}
-
-
 void MainWindow::startNewGame()
 {
     int ret = QMessageBox::warning(
@@ -137,7 +127,7 @@ void MainWindow::startNewGame()
             );
         
     if (ret == QMessageBox::Yes) {
-        gameEngine->start("default");
+        gameEngine->start(Settings::self()->getLevelset());
     }
 }
 

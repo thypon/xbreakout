@@ -13,7 +13,8 @@ HEADERS += sources/ball.h \
            sources/mainwindow.h \
            sources/native.h \
            sources/renderer.h \
-           sources/textitems.h
+           sources/textitems.h \
+    sources/settings.h
 
 SOURCES += sources/ball.cpp \
            sources/brick.cpp \
@@ -27,7 +28,8 @@ SOURCES += sources/ball.cpp \
            sources/main.cpp \
            sources/mainwindow.cpp \
            sources/renderer.cpp \
-           sources/textitems.cpp
+           sources/textitems.cpp \
+    sources/settings.cpp
 
 RESOURCES += \
     resources/xbreakout.qrc

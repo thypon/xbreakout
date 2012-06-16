@@ -11,22 +11,16 @@
         <file>sounds/ball-bounce-wall.ogg</file>
         <file>sounds/ball-bounce.ogg</file>
         <file>themes/alien_preview.png</file>
-        <file>themes/alienbreakout.desktop</file>
         <file>themes/alienbreakout.svgz</file>
         <file>themes/crystal_preview.png</file>
-        <file>themes/crystal.desktop</file>
         <file>themes/crystal.svgz</file>
-        <file>themes/default.desktop</file>
         <file>themes/egyptian_breakout_preview.png</file>
         <file>themes/egyptianbreakout.svgz</file>
         <file>themes/IceWorld_preview.png</file>
-        <file>themes/IceWorld.desktop</file>
         <file>themes/IceWorld.svgz</file>
         <file>themes/simple_preview.png</file>
-        <file>themes/simple.desktop</file>
         <file>themes/simple.svgz</file>
         <file>themes/web20_preview.png</file>
-        <file>themes/web20.desktop</file>
         <file>themes/web20.svgz</file>
     </qresource>
 </RCC>

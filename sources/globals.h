@@ -79,4 +79,8 @@ const int MAXIMUM_LIVES = 10;
 const int DEFAULT_WIDTH = 750;
 const int DEFAULT_HEIGHT = 500;
 
+const QString APP_NAME("xbreakout");
+const QString DEFAULT_THEME("simple");
+const QString DEFAULT_LEVELSET("default");
+
 #endif // GLOBALS_H

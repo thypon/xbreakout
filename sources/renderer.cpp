@@ -20,6 +20,7 @@ qit under the terms of the GNU General Public License as published by
 */
 
 #include "renderer.h"
+#include "settings.h"
 
 #include <QPainter>
 
@@ -37,7 +38,7 @@ Renderer::Renderer()
 {
     m_renderer = new QSvgRenderer();
 
-    if(!loadTheme("simple"))
+    if(!loadTheme(Settings::self()->getTheme()))
         qDebug() << "Failed to load any game theme!";
 }
 
