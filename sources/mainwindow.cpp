@@ -22,10 +22,10 @@
 #include "canvaswidget.h"
 #include "renderer.h"
 #include "settings.h"
+#include "dialog.h"
 
 #include <QGraphicsScene>
 #include <QPointer>
-#include <QMessageBox>
 #include <QIcon>
 #include <QAction>
 #include <QTime>
@@ -89,6 +89,12 @@ MainWindow::~MainWindow()
     delete gameEngine;
     delete canvasWidget;
 }
+
+int MainWindow::dialog(const QString& label) {
+    Dialog dialog(label);
+    canvasWidget->reloadSprites();
+    return dialog.response();
+}
  
 void MainWindow::setupActions()
 {
@@ -118,15 +124,7 @@ void MainWindow::setupActions()
 
 void MainWindow::startNewGame()
 {
-    int ret = QMessageBox::warning(
-            this,
-            "New Game",
-            "Starting a new game will end the current one!",
-            QMessageBox::Yes | QMessageBox::No,
-            QMessageBox::No
-            );
-        
-    if (ret == QMessageBox::Yes) {
+    if (dialog("Start a new game?") == Dialog::Yes) {
         gameEngine->start(Settings::self()->getLevelset());
     }
 }
