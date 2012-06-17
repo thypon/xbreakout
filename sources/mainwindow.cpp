@@ -173,15 +173,15 @@ void MainWindow::handleEndedGame(int score, int level, int time)
     canvasWidget->handleGameEnded();
 }
 
-void MainWindow::mousePressEvent(QMouseEvent *event)
+void MainWindow::mouseReleaseEvent(QMouseEvent *event)
 {
     if (gameEngine->gameIsPaused()) {
         pauseAction->activate(QAction::Trigger);
-        QMainWindow::mousePressEvent(event);
+        QMainWindow::mouseReleaseEvent(event);
         return;
     }
 
     gameEngine->fire();
-    QMainWindow::mousePressEvent(event);
+    QMainWindow::mouseReleaseEvent(event);
 }
 

@@ -52,7 +52,7 @@ private:
     GameEngine *gameEngine;
     
 protected:
-    void mousePressEvent(QMouseEvent *event);
+    void mouseReleaseEvent(QMouseEvent *event);
 };
  
 #endif
