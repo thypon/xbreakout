@@ -35,6 +35,7 @@ private slots:
     void handleEndedGame(int score, int level, int time);
     void startNewGame();
     void fire();
+    void close();
     // calls the action
     void pauseGame();
     void toggleGamePaused();

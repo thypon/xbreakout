@@ -188,3 +188,12 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
     QMainWindow::mousePressEvent(event);
 }
 
+void MainWindow::close()
+{
+    if (dialog("Are you sure you want to exit?") == Dialog::YES) {
+        QMainWindow::close();
+    } else {
+        gameEngine->resume();
+    }
+}
+
