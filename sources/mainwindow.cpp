@@ -91,6 +91,7 @@ MainWindow::~MainWindow()
 }
 
 int MainWindow::dialog(const QString& label) {
+    emit pauseGame();
     Dialog dialog(label);
     canvasWidget->reloadSprites();
     return dialog.response();

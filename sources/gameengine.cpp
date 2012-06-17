@@ -104,7 +104,7 @@ void GameEngine::pause()
     m_elapsedTimeTimer.stop();
     m_gameTimer.stop();
     emit gamePaused();
-    showMessage("Game Paused!");
+    //showMessage("Game Paused!"); PORT - FOR NOW
 }
 
 void GameEngine::resume()
@@ -473,7 +473,7 @@ void GameEngine::handleDeath()
     m_bar.reset();
     if (m_lives.isEmpty()) {
         m_gameOver = true;
-        showMessage("Game Over!");
+        //showMessage("Game Over!");
         emit gameEnded(m_score, m_level, m_elapsedTime);
     } else {
         delete m_lives.takeLast();
