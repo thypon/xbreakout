@@ -129,7 +129,7 @@ void MainWindow::startNewGame()
         gameEngine->start(Settings::self()->getLevelset());
         show();
     } else {
-        gameEngine->resume();
+        QMainWindow::close();
     }
 }
 
