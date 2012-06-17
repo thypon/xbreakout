@@ -115,7 +115,7 @@ void CanvasWidget::handleGameResumed()
 void CanvasWidget::handleGameEnded()
 {
     releaseMouse();
-    updateBarTimer.stop();
+    //updateBarTimer.stop();
     moveBarTimer.stop();
     setCursor(QCursor(Qt::ArrowCursor));
 }

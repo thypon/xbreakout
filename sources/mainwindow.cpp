@@ -91,7 +91,6 @@ MainWindow::~MainWindow()
 }
 
 int MainWindow::dialog(const QString& label) {
-    pauseGame();
     Dialog dialog(label);
     canvasWidget->reloadSprites();
     return dialog.response();
@@ -125,6 +124,7 @@ void MainWindow::setupActions()
 
 void MainWindow::startNewGame()
 {
+    gameEngine->setGamePaused(true);
     if (dialog("Start a new game?") == Dialog::YES) {
         gameEngine->start(Settings::self()->getLevelset());
         show();
@@ -190,6 +190,7 @@ void MainWindow::mousePressEvent(QMouseEvent *event)
 
 void MainWindow::close()
 {
+    gameEngine->setGamePaused(true);
     if (dialog("Are you sure you want to exit?") == Dialog::YES) {
         QMainWindow::close();
     } else {
