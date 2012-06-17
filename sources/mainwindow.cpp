@@ -91,7 +91,7 @@ MainWindow::~MainWindow()
 }
 
 int MainWindow::dialog(const QString& label) {
-    emit pauseGame();
+    pauseGame();
     Dialog dialog(label);
     canvasWidget->reloadSprites();
     return dialog.response();
@@ -127,6 +127,9 @@ void MainWindow::startNewGame()
 {
     if (dialog("Start a new game?") == Dialog::YES) {
         gameEngine->start(Settings::self()->getLevelset());
+        show();
+    } else {
+        gameEngine->resume();
     }
 }
 
@@ -170,17 +173,18 @@ void MainWindow::handleEndedGame(int score, int level, int time)
     QString timeString = t.toString("HH:mm");
     
     canvasWidget->handleGameEnded();
+    startNewGame();
 }
 
-void MainWindow::mouseReleaseEvent(QMouseEvent *event)
+void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     if (gameEngine->gameIsPaused()) {
         pauseAction->activate(QAction::Trigger);
-        QMainWindow::mouseReleaseEvent(event);
+        QMainWindow::mousePressEvent(event);
         return;
     }
 
     gameEngine->fire();
-    QMainWindow::mouseReleaseEvent(event);
+    QMainWindow::mousePressEvent(event);
 }
 
