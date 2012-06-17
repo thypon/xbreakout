@@ -125,7 +125,7 @@ void MainWindow::setupActions()
 
 void MainWindow::startNewGame()
 {
-    if (dialog("Start a new game?") == Dialog::Yes) {
+    if (dialog("Start a new game?") == Dialog::YES) {
         gameEngine->start(Settings::self()->getLevelset());
     }
 }

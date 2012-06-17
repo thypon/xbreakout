@@ -44,6 +44,7 @@ private slots:
     
 private:
     void setupActions();
+    int dialog(const QString& label);
 
     QAction *pauseAction;
     
