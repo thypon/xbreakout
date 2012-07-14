@@ -98,9 +98,6 @@ void GameEngine::pause()
     if (gameIsPaused()) {
         return;
     }
-    if (m_gameWon || m_gameOver) {
-        return;
-    }
     m_elapsedTimeTimer.stop();
     m_gameTimer.stop();
     emit gamePaused();

@@ -34,7 +34,8 @@
 MainWindow::MainWindow(QWidget *parent) 
     : QMainWindow(parent),
       canvasWidget(new CanvasWidget(this)),
-      gameIsPaused(true)
+      gameIsPaused(true),
+      thereIsAnotherDialog(false)
 {
     Item::setCanvas(canvasWidget);
     new Background; // the background put's itself into the canvasWidget
@@ -91,9 +92,15 @@ MainWindow::~MainWindow()
 }
 
 int MainWindow::dialog(const QString& label) {
-    Dialog dialog(label);
-    canvasWidget->reloadSprites();
-    return dialog.response();
+    int response = Dialog::NO;
+    if (!thereIsAnotherDialog) {
+        thereIsAnotherDialog = true;
+        Dialog dialog(label);
+        canvasWidget->reloadSprites();
+        response = dialog.response();
+        thereIsAnotherDialog = false;
+    }
+    return response;
 }
  
 void MainWindow::setupActions()
@@ -179,8 +186,10 @@ void MainWindow::handleEndedGame(int score, int level, int time)
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {
     if (gameEngine->gameIsPaused()) {
-        pauseAction->activate(QAction::Trigger);
-        QMainWindow::mousePressEvent(event);
+        if (!thereIsAnotherDialog) {
+            pauseAction->activate(QAction::Trigger);
+            QMainWindow::mousePressEvent(event);
+        }
         return;
     }
 
