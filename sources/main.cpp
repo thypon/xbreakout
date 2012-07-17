@@ -23,6 +23,7 @@
 
 int main (int argc, char *argv[])
 {
+    QApplication::setGraphicsSystem("opengl");
     QApplication app(argc, argv);
     
     MainWindow* window = new MainWindow();

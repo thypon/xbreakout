@@ -32,12 +32,13 @@ CanvasWidget::CanvasWidget(QWidget *parent)
       rightPressed(false),
       leftPressed(false),
       usingKeys(0)
-{
+{    
     setScene(new QGraphicsScene());
     setFocus();
     setStyleSheet( "QGraphicsView { border-style: none; }" );
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    scene()->setItemIndexMethod(QGraphicsScene::NoIndex); //Disable index for better performance
     //setSceneRect(parent->frameGeometry());
     setFrameStyle(QFrame::NoFrame);
     setCacheMode(QGraphicsView::CacheBackground); // Optimize caching
@@ -59,6 +60,7 @@ CanvasWidget::CanvasWidget(QWidget *parent)
     updateBarTimer.start();
     setCursor(QCursor(Qt::BlankCursor));
 }
+
 
 void CanvasWidget::moveBar()
 {

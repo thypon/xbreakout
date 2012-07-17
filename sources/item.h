@@ -22,6 +22,7 @@
 #include <QGraphicsScene>
 #include <QObject>
 #include <QGraphicsPixmapItem>
+#include <QStyleOptionGraphicsItem>
 
 #include "globals.h"
 #include "canvaswidget.h"

@@ -22,6 +22,7 @@
 #include <QTimer>
 #include <QGraphicsView>
 #include <QGraphicsPixmapItem>
+#include <QStyleOptionGraphicsItem>
 
 class CanvasWidget : public QGraphicsView
 {

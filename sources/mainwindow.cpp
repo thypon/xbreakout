@@ -110,10 +110,13 @@ void MainWindow::setupActions()
     connect(newGame, SIGNAL(triggered()), this, SLOT(startNewGame()));
     this->addAction(newGame);
     
-    QAction *quit = new QAction(this);
-    quit->setShortcut(Qt::CTRL + Qt::Key_C);
-    connect(quit, SIGNAL(triggered()), this, SLOT(close()));
-    this->addAction(quit);
+    QAction *quitAction = new QAction(this);
+    QList<QKeySequence> quitKeys;
+    quitKeys.append(Qt::CTRL + Qt::Key_C);
+    quitKeys.append(Qt::Key_MediaPrevious);
+    quitAction->setShortcuts(quitKeys);
+    connect(quitAction, SIGNAL(triggered()), this, SLOT(close()));
+    this->addAction(quitAction);
 
     QAction *fireAction = new QAction(this);
     fireAction->setShortcut(Qt::Key_Space);
@@ -121,10 +124,11 @@ void MainWindow::setupActions()
     this->addAction(fireAction);
 
     pauseAction = new QAction(this);
-    QList<QKeySequence> keys;
-    keys.append(Qt::Key_Escape);
-    keys.append(Qt::Key_Pause);
-    pauseAction->setShortcuts(keys);
+    QList<QKeySequence> pauseKeys;
+    pauseKeys.append(Qt::Key_Escape);
+    pauseKeys.append(Qt::Key_Pause);
+    pauseKeys.append(Qt::Key_MediaNext);
+    pauseAction->setShortcuts(pauseKeys);
     connect(pauseAction, SIGNAL(triggered()), this, SLOT(toggleGamePaused()));
     this->addAction(pauseAction);
 }
