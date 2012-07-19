@@ -30,7 +30,7 @@ const int MINIMUM_GIFT_SPEED = 1;
 const int MAXIMUM_GIFT_SPEED = 3;
 const int REPAINT_INTERVAL = 16; // should be a power of two
 // how ofter the position of the item is updated (but not repainted)
-const int DEFAULT_UPDATE_INTERVAL = 13;
+const int DEFAULT_UPDATE_INTERVAL = REPAINT_INTERVAL;
 //const int MAXIMUM_UPDATE_INTERVAL = REPAINT_INTERVAL;
 const int MINIMUM_UPDATE_INTERVAL = 8;
 // the higher this number the more the game becomes faster over time
@@ -75,7 +75,7 @@ const int GAME_WON_SCORE = 10000;
 const int INITIAL_LIVES = 2;
 const int MAXIMUM_LIVES = 10;
 
-// minimum with and height of the game widget (CanvasWidget)
+// minimum width and height of the game widget (CanvasWidget)
 const int DEFAULT_WIDTH = 750;
 const int DEFAULT_HEIGHT = 500;
 
