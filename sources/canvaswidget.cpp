@@ -42,6 +42,7 @@ CanvasWidget::CanvasWidget(QWidget *parent)
     setFrameStyle(QFrame::NoFrame);
     setFocusPolicy(Qt::StrongFocus);
     setAlignment(Qt::AlignLeft | Qt::AlignTop);
+    setViewportUpdateMode(SmartViewportUpdate);
     
     scene()->addItem(&background);
     background.show();
