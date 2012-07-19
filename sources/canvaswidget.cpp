@@ -39,9 +39,7 @@ CanvasWidget::CanvasWidget(QWidget *parent)
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     scene()->setItemIndexMethod(QGraphicsScene::NoIndex); //Disable index for better performance
-    //setSceneRect(parent->frameGeometry());
     setFrameStyle(QFrame::NoFrame);
-    setCacheMode(QGraphicsView::CacheBackground); // Optimize caching
     setFocusPolicy(Qt::StrongFocus);
     setAlignment(Qt::AlignLeft | Qt::AlignTop);
     
