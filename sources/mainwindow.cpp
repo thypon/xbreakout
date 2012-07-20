@@ -40,6 +40,10 @@ MainWindow::MainWindow(QWidget *parent)
     Item::setCanvas(canvasWidget);
     new Background; // the background put's itself into the canvasWidget
     gameEngine = new GameEngine(this); // must be called after Item::setCanvas()
+
+#if defined ANDROID
+    setAttribute(Qt::WA_AcceptTouchEvents);
+#endif
     
     connect(canvasWidget, SIGNAL(mouseMoved(int)),
             gameEngine, SLOT(moveBar(int)));
@@ -187,30 +191,24 @@ void MainWindow::handleEndedGame(int score, int level, int time)
     startNewGame();
 }
 
-#if defined ANDROID
-void MainWindow::mouseReleaseEvent(QMouseEvent *event)
-#else
-void MainWindow::mousePressEvent(QMouseEvent *event)
-#endif
+bool MainWindow::event(QEvent *event)
 {
-    if (gameEngine->gameIsPaused()) {
-        if (!thereIsAnotherDialog) {
-            pauseAction->activate(QAction::Trigger);
+    switch (event->type()) {
 #if defined ANDROID
-            QMainWindow::mouseReleaseEvent(event);
+        case QEvent::TouchEnd:
 #else
-            QMainWindow::mousePressEvent(event);
+        case QEvent::MouseButtonPress:
 #endif
-        }
-        return;
+            if (gameEngine->gameIsPaused()) {
+                if (!thereIsAnotherDialog) {
+                    pauseAction->activate(QAction::Trigger);
+                }
+            } else {
+                gameEngine->fire();
+            }
+        default:
+            return QMainWindow::event(event);
     }
-
-    gameEngine->fire();
-#if defined ANDROID
-    QMainWindow::mouseReleaseEvent(event);
-#else
-    QMainWindow::mousePressEvent(event);
-#endif
 }
 
 void MainWindow::close()
