@@ -25,6 +25,10 @@
 #include <QKeyEvent>
 #include <QCursor>
 
+#if defined ANDROID
+#include <QPainter>
+#endif
+
 #include <QDebug>
 
 CanvasWidget::CanvasWidget(QWidget *parent) 
@@ -32,7 +36,11 @@ CanvasWidget::CanvasWidget(QWidget *parent)
       rightPressed(false),
       leftPressed(false),
       usingKeys(0)
-{    
+{
+#if defined ANDROID
+    setRenderHints(QPainter::HighQualityAntialiasing | QPainter::SmoothPixmapTransform);
+#endif
+
     setScene(new QGraphicsScene());
     setFocus();
     setStyleSheet( "QGraphicsView { border-style: none; }" );
