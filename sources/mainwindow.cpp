@@ -187,18 +187,30 @@ void MainWindow::handleEndedGame(int score, int level, int time)
     startNewGame();
 }
 
+#if defined ANDROID
+void MainWindow::mouseReleaseEvent(QMouseEvent *event)
+#else
 void MainWindow::mousePressEvent(QMouseEvent *event)
+#endif
 {
     if (gameEngine->gameIsPaused()) {
         if (!thereIsAnotherDialog) {
             pauseAction->activate(QAction::Trigger);
+#if defined ANDROID
+            QMainWindow::mouseReleaseEvent(event);
+#else
             QMainWindow::mousePressEvent(event);
+#endif
         }
         return;
     }
 
     gameEngine->fire();
+#if defined ANDROID
+    QMainWindow::mouseReleaseEvent(event);
+#else
     QMainWindow::mousePressEvent(event);
+#endif
 }
 
 void MainWindow::close()

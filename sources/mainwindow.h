@@ -55,7 +55,11 @@ private:
     GameEngine *gameEngine;
     
 protected:
+#if defined ANDROID
+    void mouseReleaseEvent(QMouseEvent *event);
+#else
     void mousePressEvent(QMouseEvent *event);
+#endif
 };
  
 #endif
