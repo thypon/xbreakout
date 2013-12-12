@@ -43,7 +43,7 @@ void Bar::reset()
 void Bar::enlarge()
 {
     int oldWidth = width;
-    width = qRound(width*RESIZE_BAR_RATIO);
+    width = qRound((double)width*RESIZE_BAR_RATIO);
     if (width > MAX_BAR_WIDTH) {
         width = MAX_BAR_WIDTH;
     }
@@ -58,7 +58,7 @@ void Bar::enlarge()
 void Bar::shrink()
 {
     int oldWidth = width;
-    width = qRound(width/RESIZE_BAR_RATIO);
+    width = qRound((double)width/RESIZE_BAR_RATIO);
     if (width < MIN_BAR_WIDTH) {
         width = MIN_BAR_WIDTH;
     }
@@ -82,9 +82,9 @@ Life::Life() :
 {
     ++count;
     
-    int x = -5 + qRound( BRICK_WIDTH * WIDTH 
+    int x = -5 + qRound((double) BRICK_WIDTH * WIDTH 
                         - (BRICK_WIDTH * count) );
-    int y = qRound(-1.2 * BRICK_HEIGHT);
+    int y = qRound((double) -1.2 * BRICK_HEIGHT);
      
     moveTo(x, y);
     

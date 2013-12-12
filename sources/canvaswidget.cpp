@@ -138,7 +138,7 @@ void CanvasWidget::resizeEvent(QResizeEvent */*event*/)
 void CanvasWidget::handleResetMousePosition()
 {
     int barPosition = GameEngine::bar().center();
-    int screenX = qRound(barPosition * Item::scale()) + Item::borderLeft();
+    int screenX = qRound((double)barPosition * Item::scale()) + Item::borderLeft();
     QPoint p = mapToGlobal(QPoint(screenX, 0));
     cursor().setPos(p.x(), cursor().pos().y());
 }
@@ -164,7 +164,7 @@ void CanvasWidget::updateBar()
 
     // TODO: put scaling somewhere else... (???)
     // convert the screen position to scene position
-    int posX = qRound((p.x() - Item::borderLeft()) / Item::scale());
+    int posX = qRound((double)(p.x() - Item::borderLeft()) / Item::scale());
     emit mouseMoved(posX);
 }
 

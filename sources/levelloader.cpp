@@ -171,7 +171,7 @@ void LevelLoader::loadLine(QDomElement lineNode, QList< Brick* >& bricks)
     
     // Convert line information to bricks
     for( int x = 0; x < line.size(); x++ ){
-        char charType = line[x].toAscii();
+        char charType = line[x].toLatin1();
         if (charType != '-') {
             bricks.append( new Brick(m_game, getTypeFromChar(charType), x+1, m_lineNumber) );
         }
